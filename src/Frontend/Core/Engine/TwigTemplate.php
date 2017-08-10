@@ -39,7 +39,7 @@ class TwigTemplate extends BaseTwigTemplate
         parent::__construct($environment, $parser, $locator);
 
         $container = Model::getContainer();
-        $this->forkSettings = $container->get('fork.settings');
+        $this->forkSettings = Model::get('fork.settings');
         $this->debugMode = $container->getParameter('kernel.debug');
         $this->environment->disableStrictVariables();
         new FormExtension($this->environment);
