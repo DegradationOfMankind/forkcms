@@ -42,10 +42,6 @@ services:
         class: stdClass
 
     # dummy service during the installation
-    fork.settings:
-        class: stdClass
-
-    # dummy service during the installation
     cache.pool:
         class: stdClass
 
